@@ -1,6 +1,14 @@
-// User variables:
-$accent: orange;
-$text: #333;
+// colors:
+$default: #333;
+$additional: #FF5A00;
+
+// mixins:
+
+@mixin transition3s() {
+  transition: .3s ease-in-out;
+}
+
+
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px;

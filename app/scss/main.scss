@@ -3,23 +3,23 @@
 // @import "libs";
 
 ::-webkit-input-placeholder {
-	color: #666;
+	color: #BDBDBD;
 }
 
 ::-moz-placeholder {
-	color: #666;
+	color: #BDBDBD;
 }
 
 :-ms-input-placeholder {
-	color: #666;
+	color: #BDBDBD;
 }
 
 ::-ms-input-placeholder {
-	color: #666;
+	color: #BDBDBD;
 }
 
 ::placeholder {
-	color: #666;
+	color: #BDBDBD;
 }
 
 ::-moz-selection {
@@ -49,9 +49,9 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
-	font-family: Roboto,sans-serif;
+	font-family: Ubuntu, sans-serif;
 	overflow-x: hidden;
-	color: #333;
+	color: $default;
 }
 
 .example-grid {
@@ -74,6 +74,18 @@ body {
 	-ms-grid-column: 3;
 	grid-area: right;
 }
+
+//Header
+@import "header";
+//Header end
+
+//Slider
+@import "slider";
+//Slider end
+
+section {margin-bottom: 40px;}
+
+@import "media";
 
 @media (max-width:575.98px) {
 	.example-grid {

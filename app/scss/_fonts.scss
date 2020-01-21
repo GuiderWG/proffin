@@ -15,10 +15,14 @@
 		font-family: $f-name;
 		font-style: $f-style;
 		font-weight: $f-weight;
-		src: url($f-url) format('woff2');}}
+		src: url($f-url) format('woff');}}
 
 
-@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2');
-@include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2');
-@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2');
-@include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2');
+@include font('Ubuntu', normal, 300, '../fonts/Ubuntu-Light.woff');
+@include font('Ubuntu', normal, 400, '../fonts/Ubuntu-Regular.woff');
+@include font('Ubuntu', normal, 600, '../fonts/Ubuntu-Medium.woff');
+@include font('Ubuntu', normal, 700, '../fonts/Ubuntu-Bold.woff');
+@include font('Ubuntu', normal, 700, '../fonts/Ubuntu-Bold.woff');
+@include font('Merriweather', normal, 300, '../fonts/Merriweather-Light.woff');
+@include font('Merriweather', normal, 400, '../fonts/Merriweather-Regular.woff');
+@include font('Merriweather', normal, 600, '../fonts/Merriweather-Bold.woff');
