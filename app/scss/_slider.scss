@@ -94,20 +94,33 @@
 .static-form {
   position: relative;
   color: #fff;
+  &_black {
+    color: $default;
+  }
   &__group {
     margin-bottom: 30px;
+    &_margin_lg_0 {
+      margin-bottom: 0;
+    }
   }
   &__label {
     font-size: 16px;
     padding: 0;
   }
   &__input {
+    @include ubuntuLight;
+    font-size: 19px;
+    color: #BDBDBD !important;
+    box-shadow: none !important;
     background: none;
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #fff;
     @include transition3s;
     padding-left: 0;
+    &_border_black {
+      border-bottom: 1px solid $default;
+    }
   }
   &__input:focus {
     background: none;
@@ -115,27 +128,10 @@
     box-shadow: none;
   }
   &__input::placeholder {
+    @include ubuntuLight;
   	color: #BDBDBD;
     font-size: 19px;
     font-weight: 300;
-  }
-  &__btn {
-    border: 1px solid transparent;
-    border-radius: 0;
-    background: #FF5A00;
-    color: #fff;
-    padding: 11px 0;
-    font-size: 18px;
-    width: 100%;
-    &:hover {
-      border: 1px solid #FF5A00;
-      background: transparent;
-      color: #FF5A00;
-      box-shadow: none;
-    }
-    &:focus {
-      box-shadow: none;
-    }
   }
   &__konf {
     font-weight: 300;

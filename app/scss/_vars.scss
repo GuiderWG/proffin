@@ -8,6 +8,42 @@ $additional: #FF5A00;
   transition: .3s ease-in-out;
 }
 
+@mixin ubuntuLight() {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 300;
+}
+
+@mixin ubuntuMedium() {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+}
+
+@mixin ubuntuBold() {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 600;
+}
+
+@mixin MerriweatherLight() {
+  font-family: Merriweather, sans-serif;
+  font-weight: 300;
+}
+
+@mixin MerriweatherMedium() {
+  font-family: Merriweather, sans-serif;
+  font-weight: 400;
+}
+
+@mixin MerriweatherBold() {
+  font-family: Merriweather, sans-serif;
+  font-weight: 600;
+}
+
+@mixin MerriweatherBlack() {
+  font-family: Merriweather, sans-serif;
+  font-weight: 900;
+}
+
+
 
 
 // Bootstrap compatible gutter variable => $gutter

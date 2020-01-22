@@ -1,0 +1,27 @@
+.stages {
+  &__item {
+    margin-bottom: 40px;
+  }
+  &__title {
+    margin: 40px 0 55px;
+  }
+  &__icon {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    &_bold {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.stages-form {
+  background: #EBEBEB;
+  padding: 28px 0;
+  margin: 40px 0 0 0;
+}

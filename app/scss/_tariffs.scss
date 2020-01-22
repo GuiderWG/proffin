@@ -1,0 +1,61 @@
+.tariffs {
+  &__title {
+    margin: 40px 0 90px;
+  }
+  &__item {
+    padding: 26px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    &_bg_white {
+      background: #fff;
+      color: $default;
+    }
+  }
+  &__top-inf {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  &__name {
+    font-weight: bold;
+    font-size: 32px;
+  }
+  &__price {
+    font-weight: bold;
+    font-size: 24px;
+    color: $additional;
+  }
+  &__ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 24px;
+    height: 312px;
+  }
+  &__list {
+    position: relative;
+    padding-left: 20px;
+    &::before {
+      content: '+';
+      position: absolute;
+      top: -3px;
+      left: 0px;
+      color: $additional;
+      font-weight: 600;
+      font-size: 22px;
+    }
+    &_negative {
+      color: rgba(255,255,255, 0.4);
+      &::before {
+        content: '-';
+        left: 3px;
+      }
+    }
+    .tariffs__item_bg_white &_negative {
+      color: rgba(51,51,51, 0.4);
+    }
+  }
+}
