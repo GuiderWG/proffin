@@ -4,6 +4,9 @@ $additional: #FF5A00;
 
 // mixins:
 
+@mixin transition2s() {
+  transition: .2s ease-in-out;
+}
 @mixin transition3s() {
   transition: .3s ease-in-out;
 }

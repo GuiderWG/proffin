@@ -15,13 +15,13 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="anc-home">
 		<div class="container">
 			<div class="row align-items-center justify-content-center">
-				<div class="col-lg-3">
-					<div class="header__logo"><img src="img/logo.png" alt="" class="header__logo-img"></div>
+				<div class="col-3">
+					<div class="header__logo"><a href="#anc-home" class="header__logo-link"><img src="img/logo.png" alt="" class="header__logo-img"></a></div>
 				</div>
-				<div class="col-lg-9">
+				<div class="col-9">
 					<div class="header__menu top-menu">
 						<ul class="top-menu">
 							<li class="top-menu__item"><a href="#anc-about" class="top-menu__link">О компании</a></li>
@@ -29,19 +29,31 @@
 							<li class="top-menu__item"><a href="#anc-stages" class="top-menu__link">Этапы</a></li>
 							<li class="top-menu__item"><a href="#anc-deals" class="top-menu__link">Дела</a></li>
 							<li class="top-menu__item"><a href="#anc-reviews" class="top-menu__link">Отзывы</a></li>
-							<li class="top-menu__item"><a href="#anc-questions" class="top-menu__link">Вопросы</a></li>
-							<li class="top-menu__item scrollto"><a href="#anc-contacts" class="top-menu__link">Контакты</a></li>
+							<li class="top-menu__item"><a href="#anc-contacts" class="top-menu__link">Контакты</a></li>
 						</ul>
 					</div>
+					<a href="#menu" class="mobile-menu-btn">
+						<span class="mobile-menu-btn__span"></span>
+					</a>
 				</div>
 			</div>
+		</div>
+		<div class="mobile-menu-wrap">
+			<ul class="mobile-menu">
+				<li class="mobile-menu__li"><a href="#anc-about" class="mobile-menu__link">О компании</a></li>
+				<li class="mobile-menu__li"><a href="#anc-tariffs" class="mobile-menu__link">Тарифы</a></li>
+				<li class="mobile-menu__li"><a href="#anc-stages" class="mobile-menu__link">Этапы</a></li>
+				<li class="mobile-menu__li"><a href="#anc-deals" class="mobile-menu__link">Дела</a></li>
+				<li class="mobile-menu__li"><a href="#anc-reviews" class="mobile-menu__link">Отзывы</a></li>
+				<li class="mobile-menu__li"><a href="#anc-contacts" class="mobile-menu__link">Контакты</a></li>
+			</ul>
 		</div>
 	</header>
 
 	<section class="top-slider">
 		<div class="general-slider owl-carousel owl-theme">
 			<div class="general-slider__item" style="background-image: url(img/slide1.jpg);">
-				<div class="container">
+				<div class="container wow fadeIn">
 					<div class="row">
 						<div class="col-lg-8">
 							<div class="general-slider__info">
@@ -70,14 +82,14 @@
 		<div class="general-slider__static">
 			<div class="container">
 				<div class="row align-items-end">
-					<div class="col-lg-7">
+					<div class="col-lg-7 wow slideInLeft">
 						<div class="general-slider__static-left">
 							<div class="general-slider__dots"></div>
 							<div class="general-slider__nav"></div>
 						</div>
 					</div>
 
-					<div class="col-lg-4 ml-auto d-none d-lg-block">
+					<div class="col-lg-4 ml-auto d-none d-lg-block wow slideInRight">
 						<div class="top-form general-slider__form">
 							<form action="#" class="static-form needs-validation" novalidate>
 								<div class="row">
@@ -112,11 +124,11 @@
 
 	<section class="section-default" id="anc-about">
 		<div class="container">
-			<div class="section-default__title">О компании</div>
+			<div class="section-default__title wow fadeInUp">О компании</div>
 			<div class="about">
 				<div class="row">
 					<div class="col-lg-6">
-						<div class="about__item">
+						<div class="about__item wow fadeInUp">
 							<div class="about__title">Компания<br> <span class="about__title_color_orange">ПрофФинЗащита</span></div>
 							<div class="about__text">Наша компания предлагает широкий спектр юридических услуг для организаций и физических лиц. Независимо от объема нашей работы и сложности поставленной задачи, будь то разовая консультация или комплексное правовое сопровождение масштабного проекта. Вы можете рассчитывать на профессиональный подход и грамотную работу специалистов нашей компании.</div>
 							<a href="#" class="about__link">Посмотреть документацию компании</a>
@@ -127,25 +139,25 @@
 							<div class="advantages">
 								<div class="row">
 									<div class="col-6">
-										<div class="advantages__item">
+										<div class="advantages__item wow slideInRight" data-wow-delay="0.1s">
 											<div class="advantages__value">789</div>
 											<div class="advantages__text">Выигранных</div>
 										</div>
 									</div>
 									<div class="col-6">
-										<div class="advantages__item">
+										<div class="advantages__item wow slideInRight" data-wow-delay="0.2s">
 											<div class="advantages__value">200</div>
 											<div class="advantages__text">Млн. р. общая сумма списанных долгов</div>
 										</div>
 									</div>
 									<div class="col-6">
-										<div class="advantages__item">
+										<div class="advantages__item wow slideInRight" data-wow-delay="0.3s">
 											<div class="advantages__value">6</div>
 											<div class="advantages__text">Месяцев в среднем занимает процесс</div>
 										</div>
 									</div>
 									<div class="col-6">
-										<div class="advantages__item advantages__item_bg_orange">
+										<div class="advantages__item advantages__item_bg_orange wow slideInRight" data-wow-delay="0.4s">
 											<div class="advantages__value">9000+</div>
 											<div class="advantages__text">Довольных клиентов</div>
 										</div>
@@ -166,7 +178,7 @@
 				<div class="tariffs__title default-title default-title_color_white">Подберите оптимальный вариант</div>
 				<div class="row justify-content-center justify-content-lg-start">
 					<div class="col-md-6 col-lg-4">
-						<div class="tariffs__item">
+						<div class="tariffs__item wow slideInUp" data-wow-delay="0.2s" data-id="tariff-basis">
 							<div class="tariffs__top-inf">
 								<div class="tariffs__name">Базис</div>
 								<div class="tariffs__price">30 000 ₽</div>
@@ -186,11 +198,11 @@
 								<li class="tariffs__list tariffs__list_negative">Банкротство юрю лиц</li>
 								<li class="tariffs__list tariffs__list_negative">Анализ договора</li>
 							</ul>
-							<a href="#" class="btn btn-default static-form__btn">Выбрать тариф</a>
+							<a href="#" class="btn btn-default tariffs__btn" data-toggle="modal" data-target="#tariff-basis">Выбрать тариф</a>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
-						<div class="tariffs__item tariffs__item_bg_white">
+						<div class="tariffs__item tariffs__item_bg_white wow slideInUp" data-wow-delay="0.1s" data-id="tariff-proffi">
 							<div class="tariffs__top-inf">
 								<div class="tariffs__name">Профи</div>
 								<div class="tariffs__price">60 000 ₽</div>
@@ -209,11 +221,11 @@
 								<li class="tariffs__list tariffs__list_negative">Банкротство физ. лиц</li>
 								<li class="tariffs__list tariffs__list_negative">Банкротство юрю лиц</li>
 							</ul>
-							<a href="#" class="btn btn-default static-form__btn">Выбрать тариф</a>
+							<a href="#" class="btn btn-default tariffs__btn" data-toggle="modal" data-target="#tariff-proffi">Выбрать тариф</a>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
-						<div class="tariffs__item">
+						<div class="tariffs__item wow slideInUp" data-wow-delay="0.2s" data-id="tariff-premium">
 							<div class="tariffs__top-inf">
 								<div class="tariffs__name">Премиум</div>
 								<div class="tariffs__price">90 000 ₽</div>
@@ -232,7 +244,7 @@
 								<li class="tariffs__list">Банкротство физ. лиц</li>
 								<li class="tariffs__list">Банкротство юрю лиц</li>
 							</ul>
-							<a href="#" class="btn btn-default static-form__btn">Выбрать тариф</a>
+							<a href="#" class="btn btn-default tariffs__btn" data-toggle="modal" data-target="#tariff-premium">Выбрать тариф</a>
 						</div>
 					</div>
 				</div>
@@ -242,30 +254,30 @@
 
 	<section class="section-default" id="anc-stages">
 		<div class="container">
-			<div class="section-default__title">Этапы</div>
+			<div class="section-default__title wow fadeInUp">Этапы</div>
 			<div class="stages">
-				<div class="default-title stages__title">Как мы работаем</div>
+				<div class="default-title stages__title wow fadeInUp">Как мы работаем</div>
 				<div class="row">
 					<div class="col-6 col-lg-3">
-						<div class="stages__item">
+						<div class="stages__item wow fadeInUp" data-wow-delay="0.1s">
 							<div class="stages__icon"><img src="img/stage_1.svg" alt="" class="stages__img img-fluid"></div>
 							<div class="stages__text"><span class="stages__text_bold">Анализ ситуации</span> Проанализируем возможные<br> риски отказа в списании долгов</div>
 						</div>
 					</div>
 					<div class="col-6 col-lg-3">
-						<div class="stages__item">
+						<div class="stages__item wow fadeInUp" data-wow-delay="0.3s">
 							<div class="stages__icon"><img src="img/stage_2.svg" alt="" class="stages__img img-fluid"></div>
 							<div class="stages__text"><span class="stages__text_bold">План банкротства</span> Составим для Вас<br> индивидуальный план банкротства</div>
 						</div>
 					</div>
 					<div class="col-6 col-lg-3">
-						<div class="stages__item">
+						<div class="stages__item wow fadeInUp" data-wow-delay="0.5s">
 							<div class="stages__icon"><img src="img/stage_3.svg" alt="" class="stages__img img-fluid"></div>
 							<div class="stages__text"><span class="stages__text_bold">Подача заявления</span> Соберем документы и составим заявление о банкротстве в суд</div>
 						</div>
 					</div>
 					<div class="col-6 col-lg-3">
-						<div class="stages__item">
+						<div class="stages__item wow fadeInUp" data-wow-delay="0.7s">
 							<div class="stages__icon"><img src="img/stage_4.svg" alt="" class="stages__img img-fluid"></div>
 							<div class="stages__text"><span class="stages__text_bold">Процедура банкротства</span> Обеспечим полное юридическое сопровождение процедуры банкротства</div>
 						</div>
@@ -289,7 +301,7 @@
 								<input type="tel" class="form-control static-form__input static-form__input_border_black" id="phone1" placeholder="Ваш телефон" required>
 							</div>
 						</div>
-						<div class="col-lg-4 text-center">
+						<div class="col-lg-4 text-right">
 							<button type="submit" class="btn btn-default static-form__btn">Получить бесплатную консультацию</button>
 						</div>
 					</div>
@@ -300,28 +312,176 @@
 
 	<section class="section-default section-default_bg_deals" id="anc-deals">
 		<div class="container">
-			<div class="section-default__title">Наши дела</div>
+			<div class="section-default__title wow fadeInUp">Наши дела</div>
 
 			<div class="deals">
-				<div class="default-title default-title_color_white deals__title">Наши дела</div>
+				<div class="default-title default-title_color_white deals__title wow fadeInUp">Наши дела</div>
 				<div class="deals-slider owl-carousel owl-theme">
-					<a href="img/img01.jpg" rel="fancyimg" class="deals-slider__item"><img src="img/img01.jpg" alt="" class="deals-slider__img"><span class="deals-slider__text">Сумма списания: <span class="deals-slider__text_color_orange">60 000 000 ₽</span></span></a>
-					<a href="img/img01.jpg" rel="fancyimg" class="deals-slider__item"><img src="img/img01.jpg" alt="" class="deals-slider__img"><span class="deals-slider__text">Сумма списания: <span class="deals-slider__text_color_orange">15 000 000 ₽</span></span></a>
-					<a href="img/img01.jpg" rel="fancyimg" class="deals-slider__item"><img src="img/img01.jpg" alt="" class="deals-slider__img"><span class="deals-slider__text">Сумма списания: <span class="deals-slider__text_color_orange">1 200 000 ₽</span></span></a>
-					<a href="img/img01.jpg" rel="fancyimg" class="deals-slider__item"><img src="img/img01.jpg" alt="" class="deals-slider__img"><span class="deals-slider__text">Сумма списания: <span class="deals-slider__text_color_orange">6 900 000 ₽</span></span></a>
-					<a href="img/img01.jpg" rel="fancyimg" class="deals-slider__item"><img src="img/img01.jpg" alt="" class="deals-slider__img"><span class="deals-slider__text">Сумма списания: <span class="deals-slider__text_color_orange">6 900 000 ₽</span></span></a>
+					<a href="img/img01.jpg" rel="fancyimg" class="deals-slider__item wow fadeInRight"><img src="img/img01.jpg" alt="" class="deals-slider__img"><span class="deals-slider__text">Сумма списания: <span class="deals-slider__text_color_orange">60 000 000 ₽</span></span></a>
+					<a href="img/img01.jpg" rel="fancyimg" class="deals-slider__item wow fadeInRight"><img src="img/img01.jpg" alt="" class="deals-slider__img"><span class="deals-slider__text">Сумма списания: <span class="deals-slider__text_color_orange">15 000 000 ₽</span></span></a>
+					<a href="img/img01.jpg" rel="fancyimg" class="deals-slider__item wow fadeInRight"><img src="img/img01.jpg" alt="" class="deals-slider__img"><span class="deals-slider__text">Сумма списания: <span class="deals-slider__text_color_orange">1 200 000 ₽</span></span></a>
+					<a href="img/img01.jpg" rel="fancyimg" class="deals-slider__item wow fadeInRight"><img src="img/img01.jpg" alt="" class="deals-slider__img"><span class="deals-slider__text">Сумма списания: <span class="deals-slider__text_color_orange">6 900 000 ₽</span></span></a>
+					<a href="img/img01.jpg" rel="fancyimg" class="deals-slider__item wow fadeInRight"><img src="img/img01.jpg" alt="" class="deals-slider__img"><span class="deals-slider__text">Сумма списания: <span class="deals-slider__text_color_orange">6 900 000 ₽</span></span></a>
+				</div>
+				<div class="row align-items-end wow fadeInUp">
+					<div class="col-lg-12">
+						<div class="general-slider__static-left">
+							<div class="deals-slider__dots"></div>
+							<div class="deals-slider__nav"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<section class="section-default" id="anc-reviews">
+		<div class="container">
+			<div class="section-default__title wow fadeInUp">Отзывы</div>
+			<div class="reviews">
+				<div class="reviews__title default-title wow fadeInUp">Благодарности наших клиентов</div>
+				<div class="reviews-slider owl-carousel owl-theme wow fadeInUp">
+					<div class="reviews-slider__item">
+						<div class="reviews-slider__text">Потеряла работу, не смогла вовремя оплачивать кредиты в банках. Образовалась просрочка, пени росли с каждым днём. Хотела получить новый кредит в банке, но банк отказал в выдаче. Отчаялась искать выход! По совету знакомых, обратилась в юридическую компанию «Добрая воля». На консультации я узнала о своих правах и о том, что есть законный выход из кредитной кабалы.</div>
+						<div class="reviews-slider__user">
+							<div class="reviews-slider__user-photo"><img src="img/rev-1.jpg" alt="" class="reviews-slider__user-img"></div>
+							<div class="reviews-slider__user-name">Екатерина Иванова <span class="reviews-slider__user-prof">Менеджер ООО “Раз-два”</span></div>
+						</div>
+					</div>
+					<div class="reviews-slider__item">
+						<div class="reviews-slider__text">Потеряла работу, не смогла вовремя оплачивать кредиты в банках. Образовалась просрочка, пени росли с каждым днём. Хотела получить новый кредит в банке, но банк отказал в выдаче. Отчаялась искать выход! По совету знакомых, обратилась в юридическую компанию «Добрая воля». На консультации я узнала о своих правах и о том, что есть законный выход из кредитной кабалы.</div>
+						<div class="reviews-slider__user">
+							<div class="reviews-slider__user-photo"><img src="img/rev-1.jpg" alt="" class="reviews-slider__user-img"></div>
+							<div class="reviews-slider__user-name">Екатерина Иванова <span class="reviews-slider__user-prof">Менеджер ООО “Раз-два”</span></div>
+						</div>
+					</div>
+					<div class="reviews-slider__item">
+						<div class="reviews-slider__text">Потеряла работу, не смогла вовремя оплачивать кредиты в банках. Образовалась просрочка, пени росли с каждым днём. Хотела получить новый кредит в банке, но банк отказал в выдаче. Отчаялась искать выход! По совету знакомых, обратилась в юридическую компанию «Добрая воля». На консультации я узнала о своих правах и о том, что есть законный выход из кредитной кабалы.</div>
+						<div class="reviews-slider__user">
+							<div class="reviews-slider__user-photo"><img src="img/rev-1.jpg" alt="" class="reviews-slider__user-img"></div>
+							<div class="reviews-slider__user-name">Екатерина Иванова <span class="reviews-slider__user-prof">Менеджер ООО “Раз-два”</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-end wow fadeInUp" data-wow-delay="0.2s">
+					<div class="col-lg-12">
+						<div class="general-slider__static-left">
+							<div class="reviews-slider__dots"></div>
+							<div class="reviews-slider__nav"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer" id="anc-contacts">
+		<div class="contacts">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="contacts__item wow fadeInUp">
+							<div class="contacts__title">Связь с нами</div>
+							<div class="contacts__text">У вас остались вопросы?<br> Напишите нам - мы ответим в ближайшее время!</div>
+							<div class="contacts__info">
+								<div class="contacts__value contacts__value_phone">
+									<a href="tel:79271234567" class="contacts__link">+7 (927) 123-45-67</a>
+								</div>
+								<div class="contacts__value contacts__value_email">
+									<a href="mailto:advokat@63.ru" class="contacts__link">advokat@63.ru</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="contacts__item wow slideInRight">
+							<form action="#" class="static-form needs-validation" novalidate>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="static-form__group">
+											<label for="name1" class="col-form-label static-form__label">Имя</label>
+											<input type="text" class="form-control static-form__input" id="name1" placeholder="Ваше имя" required>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="static-form__group static-form__group_mb_50">
+											<label for="textarea1" class="col-form-label static-form__label">Сообщение</label>
+											<textarea class="form-control static-form__textarea" id="textarea1" placeholder="Ваше сообщение"></textarea>
+											</div>
+									</div>
+									<div class="col-sm-6 text-center ml-auto">
+										<button type="submit" class="btn btn-default static-form__btn">Отправить сообщение</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="map">
+		  <div class="yamap" id="map"></div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="copyright__text">2019 (с) Все права защищены.</div>
+			</div>
+		</div>
+	</footer>
 
 
-
-
-
+	<div class="modal modal-default animated bounceInDown" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content modal-default__content">
+	      <div class="modal-default__header">
+	        <div class="modal-default__title">Заполните форму</div>
+	        <div class="modal-default__header-inf">
+	        	<div class="modal-default__value"></div>
+	        	<div class="modal-default__price"></div>
+	        </div>
+	        <button type="button" class="modal-default__close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true"><img src="img/close.svg" class="modal-default__close-img" alt=""></span>
+	        </button>
+	      </div>
+	      <div class="modal-body  modal-default__body">
+					<form action="#" class="static-form static-form_black needs-validation" novalidate>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="static-form__group">
+									<label for="name1" class="col-form-label static-form__label">Имя</label>
+									<input type="text" class="form-control static-form__input static-form__input_border_black" id="name1" placeholder="Ваше имя" required>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="static-form__group">
+									<label for="mail2" class="col-form-label static-form__label">Email</label>
+									<input type="mail" class="form-control static-form__input static-form__input_border_black" id="mail2" placeholder="Ваш Email" required>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="static-form__group">
+									<label for="phone1" class="col-form-label static-form__label">Телефон</label>
+									<input type="text" class="form-control static-form__input static-form__input_border_black" id="phone1" placeholder="Ваш телефон" required>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="static-form__group static-form__group_mb_50">
+									<label for="textarea1" class="col-form-label static-form__label">Сообщение</label>
+									<textarea class="form-control static-form__textarea static-form__textarea_border_black" id="textarea1" placeholder="Ваше сообщение"></textarea>
+								</div>
+							</div>
+							<div class="col-sm-6 text-center ml-auto">
+								<button type="submit" class="btn btn-default static-form__btn">Отправить сообщение</button>
+							</div>
+						</div>
+					</form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 	<script src="/js/scripts.min.js"></script>
+	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script src="/js/custom.js"></script>
 </body>
 </html>

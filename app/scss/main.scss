@@ -84,6 +84,7 @@ body {
 
 .section-default {
 	padding: 70px 0 100px 0;
+	overflow-y: hidden;
 }
 
 .section-default_bg_tariffs {
@@ -136,6 +137,9 @@ body {
 @import "tariffs";
 @import "stages";
 @import "deals";
+@import "reviews";
+@import "footer";
+@import "modal";
 @import "media";
 
 @media (max-width:575.98px) {

@@ -1,0 +1,43 @@
+.modal-default {
+  &__content {
+    border-radius: 0;
+    background: #EBEBEB;
+  }
+  &__header {
+    padding: 10px 15px 15px 15px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #E4E4E4;
+  }
+  &__title {
+    @include ubuntuBold;
+    font-weight: 900;
+    font-size: 24px;
+  }
+  &__header-inf {
+    text-align: right;
+  }
+  &__price {
+    color: #FF5A00;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &__close {
+    position: absolute;
+    top: -29px;
+    right: -1px;
+    background: #EBEBEB;
+    border: none;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: -57px;
+  }
+  &__close-img {
+    width: 20px;
+  }
+
+}

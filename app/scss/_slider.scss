@@ -102,6 +102,9 @@
     &_margin_lg_0 {
       margin-bottom: 0;
     }
+    &_mb_50 {
+      margin-bottom: 50px;
+    }
   }
   &__label {
     font-size: 16px;
@@ -110,7 +113,7 @@
   &__input {
     @include ubuntuLight;
     font-size: 19px;
-    color: #BDBDBD !important;
+    color: #949494 !important;
     box-shadow: none !important;
     background: none;
     border: none;
@@ -121,17 +124,45 @@
     &_border_black {
       border-bottom: 1px solid $default;
     }
+    &:focus {
+      background: none;
+      border-bottom: 1px solid #FF5A00;
+      box-shadow: none;
+    }
+    &::placeholder {
+      @include ubuntuLight;
+    	color: #949494;
+      font-size: 19px;
+      font-weight: 300;
+    }
   }
-  &__input:focus {
-    background: none;
-    border-bottom: 1px solid #FF5A00;
-    box-shadow: none;
-  }
-  &__input::placeholder {
+
+  &__textarea {
     @include ubuntuLight;
-  	color: #BDBDBD;
     font-size: 19px;
-    font-weight: 300;
+    color: #BDBDBD !important;
+    box-shadow: none !important;
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    @include transition3s;
+    padding-left: 0;
+    resize: none;
+    &_border_black {
+      border-bottom: 1px solid $default;
+    }
+    &:focus {
+      background: none;
+      border-bottom: 1px solid #FF5A00;
+      box-shadow: none;
+    }
+    &::placeholder {
+      @include ubuntuLight;
+    	color: #BDBDBD;
+      font-size: 19px;
+      font-weight: 300;
+    }
   }
   &__konf {
     font-weight: 300;
